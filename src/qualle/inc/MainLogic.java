@@ -1,13 +1,11 @@
 package qualle.inc;
 
-import qualle.inc.alg.Sort;
 import java.util.Random;
 
 class MainLogic {
 
     private int[] array;
     private Random random = new Random();
-    private Sort sort = new Sort();
 
     void setArray(int length) {
 
@@ -26,9 +24,9 @@ class MainLogic {
 
         String strArr = "";
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int anArr : arr) {
 
-            strArr += Integer.toString(arr[i]) + "\n";
+            strArr += Integer.toString(anArr) + "\n";
         }
 
         return strArr;
