@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="335.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qualle.inc.MainController">
+  <children>
+    <MenuBar style="-fx-background-color: #ffffff;" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="¯\_(ツ)_/¯" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #eeeeee;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="GenerateBtn" layoutX="123.0" layoutY="10.0" mnemonicParsing="false" prefWidth="69.0" text="Generate" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="10.0" />
+            <Button fx:id="SortBtn" layoutX="458.0" layoutY="10.0" mnemonicParsing="false" text="Сортировать" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="10.0" />
+            <HBox prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="190.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <Label fx:id="inputArr" alignment="TOP_LEFT" prefWidth="190.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="80.0" top="20.0" />
+                           </padding>
+                        </Label>
+                     </content>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+                  <VBox prefHeight="285.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="bubbleS" depthTest="DISABLE" mnemonicParsing="false" text="Bubble Sort">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Sort" />
+                           </toggleGroup>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="30.0" top="20.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="quickS" depthTest="DISABLE" mnemonicParsing="false" text="Quick Sort" toggleGroup="$Sort">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="30.0" top="20.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="selectionS" depthTest="DISABLE" mnemonicParsing="false" text="Selection Sort" toggleGroup="$Sort">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="30.0" top="20.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="insertionS" depthTest="DISABLE" mnemonicParsing="false" text="Insertion Sort" toggleGroup="$Sort">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="30.0" top="20.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="mergeS" depthTest="DISABLE" mnemonicParsing="false" text="Merge Sort" toggleGroup="$Sort">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="30.0" top="20.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="190.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <Label fx:id="outputArr" alignment="TOP_LEFT" prefWidth="190.0">
+                           <padding>
+                              <Insets left="80.0" top="20.0" />
+                           </padding>
+                        </Label>
+                     </content>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <Spinner fx:id="sizeArr" layoutX="25.0" layoutY="10.0" prefHeight="25.0" prefWidth="80.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Label layoutX="230.0" layoutY="14.0" text="Методы Сортировки" textAlignment="CENTER" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="15.0">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
