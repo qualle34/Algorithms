@@ -1,5 +1,5 @@
 # Algorithms
-  Java application for sorting algorithms
+  Java application for sorting algorithms.
   Algorithms used: 
     Bubble Sort,
     Quick Sort,
