@@ -49,7 +49,6 @@ public class MainController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         bubbleS.setSelected(true);
 
-
         SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(5, 5000, 10);
         sizeArr.setValueFactory(valueFactory);
         sizeArr.setEditable(true);

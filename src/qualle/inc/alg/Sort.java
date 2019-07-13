@@ -2,7 +2,7 @@ package qualle.inc.alg;
 
 public class Sort {
 
-    public int[] BubbleS(int[] arr) {
+    public int[] BubbleS(int[] arr) { // BubbleSort
 
         int n = arr.length;
 
@@ -23,7 +23,7 @@ public class Sort {
         return arr;
     }
 
-    public int[] QuickS(int[] arr) {
+    public int[] QuickS(int[] arr) { // QuickSort
         doQuickSort(arr, 0,arr.length-1);
         return arr;
     }
@@ -58,7 +58,7 @@ public class Sort {
         return i + 1;
     }
 
-    public int[] SelectionS(int[] arr) {
+    public int[] SelectionS(int[] arr) {  // SelectionSort
         int n = arr.length;
 
         for (int min = 0; min < n - 1; min++) {
@@ -76,7 +76,7 @@ public class Sort {
         return arr;
     }
 
-    public int[] InsertionS(int[] arr) {
+    public int[] InsertionS(int[] arr) {  // InsertionSort
 
         int buff, j;
 
@@ -98,7 +98,7 @@ public class Sort {
         return arr;
     }
 
-    public int[] MergeS(int[] arr) {
+    public int[] MergeS(int[] arr) {  // MergeSort
 
         doMergeSort(arr, arr.length);
 

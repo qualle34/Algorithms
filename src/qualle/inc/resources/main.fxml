@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="335.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qualle.inc.MainController">
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qualle.inc.MainController">
   <children>
     <MenuBar style="-fx-background-color: #ffffff;" VBox.vgrow="NEVER">
       <menus>
@@ -28,11 +28,11 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #eeeeee;" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="GenerateBtn" layoutX="123.0" layoutY="10.0" mnemonicParsing="false" prefWidth="69.0" text="Generate" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="10.0" />
-            <Button fx:id="SortBtn" layoutX="458.0" layoutY="10.0" mnemonicParsing="false" text="Сортировать" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="10.0" />
-            <HBox prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+            <Button fx:id="GenerateBtn" layoutX="170.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Генерировать" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="10.0" />
+            <Button fx:id="SortBtn" layoutX="600.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Сортировать" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0" />
+            <HBox alignment="TOP_CENTER" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
                <children>
-                  <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="190.0" vbarPolicy="ALWAYS">
+                  <ScrollPane hbarPolicy="NEVER" prefWidth="250.0" vbarPolicy="ALWAYS">
                      <content>
                         <Label fx:id="inputArr" alignment="TOP_LEFT" prefWidth="190.0">
                            <opaqueInsets>
@@ -47,7 +47,7 @@
                         <Insets bottom="10.0" left="10.0" top="10.0" />
                      </HBox.margin>
                   </ScrollPane>
-                  <VBox prefHeight="285.0" prefWidth="200.0">
+                  <VBox prefHeight="285.0" prefWidth="250.0">
                      <children>
                         <RadioButton fx:id="bubbleS" depthTest="DISABLE" mnemonicParsing="false" text="Bubble Sort">
                            <font>
@@ -100,7 +100,7 @@
                         <Insets />
                      </HBox.margin>
                   </VBox>
-                  <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="190.0" vbarPolicy="ALWAYS">
+                  <ScrollPane hbarPolicy="NEVER" prefWidth="250.0" vbarPolicy="ALWAYS">
                      <content>
                         <Label fx:id="outputArr" alignment="TOP_LEFT" prefWidth="190.0">
                            <padding>
@@ -114,8 +114,8 @@
                   </ScrollPane>
                </children>
             </HBox>
-            <Spinner fx:id="sizeArr" layoutX="25.0" layoutY="10.0" prefHeight="25.0" prefWidth="80.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-            <Label layoutX="230.0" layoutY="14.0" text="Методы Сортировки" textAlignment="CENTER" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="15.0">
+            <Spinner fx:id="sizeArr" layoutX="25.0" layoutY="10.0" prefHeight="25.0" prefWidth="80.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0" />
+            <Label layoutX="305.0" layoutY="14.0" prefHeight="17.0" prefWidth="190.0" text="Методы Сортировки" textAlignment="CENTER" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="305.0" AnchorPane.topAnchor="14.0">
                <padding>
                   <Insets left="40.0" />
                </padding>
